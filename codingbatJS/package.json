@@ -1,0 +1,16 @@
+{
+  "name": "codingbat",
+  "version": "1.0.0",
+  "description": "Exercise for js basics function",
+  "scripts": {
+    "test": "NODE_ENV=test jest"
+  },
+  "author": "Omas Naohiko",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.3.0"
+  },
+  "jest": {
+    "verbose": true
+  }
+}
