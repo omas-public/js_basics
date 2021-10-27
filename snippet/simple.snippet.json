@@ -1,0 +1,39 @@
+{
+	"template": {
+		"scope": "javascript,typescript",
+		"prefix": "simple",
+		"body": [
+			"const readLines = (file = '/dev/stdin') =>",
+			"  require('fs').readFileSync(file).toString().trim().split('\\n').map(v => v.trim())",
+			"const range = (begin, end) => {",
+			"  const addN = n => m => n + m",
+			"  const seq = (num, start) => Array.from(Array(num), addN(start))",
+			"  const [num, start] = (end === undefined)",
+			"    ? [0, begin]",
+			"    : [end - begin, begin]",
+			"  return seq(num, start)",
+			"}",
+			"const identity = value => value",
+			"const join = sep => list => list.join(sep)",
+			"const split = (sep, fun = identity) => iter => Array.from(iter.split(sep), fun)",
+			"const slice = (begin, end) => iter => end === undefined ? iter.slice(begin) : iter.slice(begin, end)",
+			"const toInt = s => parseInt(s, 10)",
+			"const toStr = n => n.toString()",
+			"const toList = fun => iter => Array.from(iter, fun)",
+			"const print = fun => value => console.log(fun(value))",
+			"",
+			"// define your function",
+			"const fun = (...args) => {",
+			"  ${2:// write code here}",
+			"  return args",
+			"}",
+			"",
+			"// const lines = []                   // define your array literal",
+			"// const lines = readLines()          // use paiza",
+			"const lines = readLines('./src/data') // if you use stdin or file",
+			"print(identity)(fun(...lines))  // use join('\\n') or join(' ') or identity in the first parenthesis",
+			""
+		],
+		"description": "template for paiza"
+	}
+}
