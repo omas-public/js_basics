@@ -147,11 +147,11 @@ const delDel = (str) => {
 [stringX](../spec/stringX.spec.js)
 ```js
 const stringX = (str) => {
-  const [first, last] = [str.charAt(0), str.slice(-1)]
+  const [first, middle, last] = [str.charAt(0), str.slice(1, -1), str.slice(-1)]
   if (str.length <= 1) return str
   return [
     first,
-    str.slice(1, -1).replace(/x/g, ''),
+    middle.replace(/x/g, ''),
     last
   ].join('')
 }
