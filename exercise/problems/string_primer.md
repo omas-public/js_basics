@@ -153,4 +153,5 @@ const fun = (...args) => {
 ## [文字列の検索 ](https://paiza.jp/works/mondai/string_primer/normal_step9?language_uid=javascript)
 
 ```js
+
 ```
