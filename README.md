@@ -44,7 +44,6 @@
 
 - [標準入力メニュー](https://paiza.jp/works/mondai/stdin_primer/problem_index?language_uid=javascript)
 - [標準入力サンプル問題セット](https://paiza.jp/works/mondai/stdin/problem_index?language_uid=javascript)
-- [算術・代入演算メニュー](https://paiza.jp/works/mondai/arithmetic_substitution_op/problem_index?language_uid=javascript)
 
 #### 解答例
 
@@ -52,11 +51,12 @@
 
 ### 3rd day 
 
-- 関数について深く学ぶ
 - 標準入力・算術・代入演算の演習を行う
+- 関数について学ぶ
 
 #### 学習コンテンツ
 
+- [関数](./docs/function.md)
 
 #### 演習
 
@@ -65,31 +65,49 @@
 #### 解答例
 
 - [算術・代入演算メニュー](./docs/arthmetic.md)
-- [CodingBat WarmUP(logic)](./codingbat/docs/warmup.logic.md)
+- [CodingBat WarmUP(logic)](./codingbatJS/docs/warmup.logic.md)
 
-### 4th - 6th day
 
-JavaScriptの文字列と配列を学ぶ，文字列は文字の配列から発展したものなので似たような操作ができるので合わせて学習する
-文字列のメソッド及び配列のメソッドは，referencesを参照せよ
+### 4th day
+
+String(文字列)のプロパティ(フィールド)とメソッド(関数)を学ぶ
 
 #### 学習コンテンツ
 
 - p130 - p135 教科書(JavaScriptモダンプログラミングガイド 第6章 文字列) 
+ 
+#### references
+
+- [String](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+#### 演習
+
+- [CodingBat WarmUP(string)](./codingbatJS/docs/warmup.string.md)
+- [文字列処理メニュー](https://paiza.jp/works/mondai/string_primer/problem_index?language_uid=javascript)
+
+#### 解答例
+
+- [文字列処理メニュー](./exercise/problems/string_primer.md)
+
+### 5th - 6th day
+
+配列を学習する，文字列のメソッドと共通している
+
+#### 学習コンテンツ
+
 - p159 - p177 教科書(JavaScriptモダンプログラミングガイド 第7章 配列)
 - p47 - p61 教科書(基礎から学ぶ React/React Hooks)
 - [JavaScript入門編4: 配列の基礎](https://paiza.jp/works/js/primer/beginner-js4)
  
 #### references
 
-- [String](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/String)
 - [Array](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 #### 演習
 
-- [CodingBat WarmUP(string)](./codingbat/docs/warmup.string.md)
-- [文字列処理メニュー](https://paiza.jp/works/mondai/string_primer/problem_index?language_uid=javascript)
 - [配列メニュー](https://paiza.jp/works/mondai/array_primer/problem_index?language_uid=javascript)
 - [配列活用メニュー](https://paiza.jp/works/mondai/array_utilization_primer/problem_index?language_uid=javascript)
+
 
 
 ### 7th - 8th day
