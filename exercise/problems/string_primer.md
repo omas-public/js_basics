@@ -32,7 +32,7 @@ const fun = (...args) => {
 
 ```js
 const fun = (...args) => {
-  const S = args
+  const [S] = args
   return S === 'paiza'
     ? 'YES'
     : 'NO'
@@ -257,8 +257,7 @@ const fun = (...args) => {
 
 const fun = (...args) => {
   const [N, Q, ...rest] = args
-  const [matrix, [m]] = split(' ')(rest)
-
+  const m = rest.pop()
 }
 ```
 
