@@ -184,6 +184,7 @@ for-of文とmap/Array.from関数が後々重要になるので基礎的なLoop�
 
 ### 演習解答例
 
-- [条件分岐メニュー](./exercise/conditions_branch.md)
-- [Dランク早解きセット](./exercise/drankfast.md)
+- [条件分岐メニュー](./exercise/problems/conditions_branch.md)
+- [二重ループメニュー](./exercise/problems/double_roop_probrems.md)
+- [Dランク早解きセット](./exercise/problems/drankfast.md)
 
