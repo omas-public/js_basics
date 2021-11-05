@@ -64,8 +64,7 @@
 
 #### 解答例
 
-- [算術・代入演算メニュー](./docs/arthmetic.md)
-- [CodingBat WarmUP(logic)](./codingbatJS/docs/warmup.logic.md)
+- [算術・代入演算メニュー](./exercise/problems/arthmetic.md)
 
 
 ### 4th day
@@ -106,6 +105,7 @@ String(文字列)のプロパティ(フィールド)とメソッド(関数)を�
 #### 演習
 
 - [CodingBat WarmUP(Array)](./codingbatJS/docs/warmup.array.md)
+- [CodingBat WarmUP(logic)](./codingbatJS/docs/warmup.logic.md)
 - [配列メニュー](https://paiza.jp/works/mondai/array_primer/problem_index?language_uid=javascript)
 - [配列活用メニュー](https://paiza.jp/works/mondai/array_utilization_primer/problem_index?language_uid=javascript)
 

@@ -85,7 +85,7 @@ const fun = (...args) => {
 
 ```js
 const fun = (...args) => {
-  let  N = toInt(args[0])
+  let N = 0
   N += 3286
   N *= 4736
   N % = 12312
@@ -94,7 +94,7 @@ const fun = (...args) => {
 
 print(identity)(fun(...lines))
 // 入力がないので直接書き換える
-const lines = ['0']
+const lines = ['']
 
 // return ((N + 3286) * 4736) % 12312
 ```
@@ -117,14 +117,14 @@ const fun = (...args) => {
 
 ```js
 const fun = (...args) => {
-  let N = toInt(args[0])
+  let N = 10000
   N = Math.trunc(N / 361)
   N %= 28
   return N
 }
 
 // 入力がないので直接書き換える
-const lines = ['10000']
+const lines = ['']
 ```
 
 ### [代入演算 4](https://paiza.jp/works/mondai/arithmetic_substitution_op/arithmetic_substitution_op__substitution_step4/edit?language_uid=javascript)
