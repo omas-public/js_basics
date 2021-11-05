@@ -39,11 +39,11 @@ const fun = (...args) => {
 }
 ```
 
-[文字列の文字数](https://paiza.jp/works/mondai/string_primer/basic_step5/edit?language_uid=javascript)
+## [文字列の文字数](https://paiza.jp/works/mondai/string_primer/basic_step5/edit?language_uid=javascript)
 
 ```js
 const fun = (...args) => {
-  const S = args
+  const [S] = args
   return S.length
 }
 ```
