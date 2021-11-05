@@ -86,6 +86,7 @@ String(文字列)のプロパティ(フィールド)とメソッド(関数)を�
 
 #### 解答例
 
+- [CodingBat WarmUP(String)](./codingbatJS/docs/warmup.string.solution.md)
 - [文字列処理メニュー](./exercise/problems/string_primer.md)
 
 ### 5th - 6th day
@@ -109,6 +110,10 @@ String(文字列)のプロパティ(フィールド)とメソッド(関数)を�
 - [配列メニュー](https://paiza.jp/works/mondai/array_primer/problem_index?language_uid=javascript)
 - [配列活用メニュー](https://paiza.jp/works/mondai/array_utilization_primer/problem_index?language_uid=javascript)
 
+#### 解答例
+
+- [CodingBat WarmUP(Array)](./codingbatJS/docs/warmup.array.solution.md)
+- [CodingBat WarmUP(logic)](./codingbatJS/docs/warmup.logic.solution.md)
 
 
 ### 7th - 8th day
@@ -131,7 +136,7 @@ String(文字列)のプロパティ(フィールド)とメソッド(関数)を�
 
 #### 解答例
 
-- [条件分岐メニュー]()
+- [条件分岐メニュー](./exercise/problems/conditions_branch.md)
 
 #### references
 
