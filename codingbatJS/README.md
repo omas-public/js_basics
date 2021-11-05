@@ -4,7 +4,7 @@
 
 - [String exercise](./docs/warmup.string.md)
 - [Logical exercise](./docs/warmup.logic.md)
-- [Other exercise](./docs/warmup.rest.md)
+- [Array exercise](./docs/warmup.array.md)
 
 ## [WarmUp I](https://codingbat.com/java/Warmup-1)
 
