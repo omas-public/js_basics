@@ -75,7 +75,7 @@ const fun = (...args) => {
   if (N % 15 === 0) return 'FizzBuzz'
   if (N % 3 === 0) return 'Fizz'
   if (N % 5 === 0) return 'Buzz'
-  return 15
+  return N
 }
 
 ```
@@ -106,8 +106,8 @@ const fun = (...args) => {
   return count
 }
 ```
-文字として判定
 
+文字として判定
 ```js
 const fun = (...args) => {
   const N = toInt(args[0])
@@ -121,7 +121,7 @@ const fun = (...args) => {
 const fun = (...args) => {
   const f = (a, b) => [a + b, -a + b, a - b, -a - b]
   const [N, A, B] = split(' ', toInt)(args[0])
-  return toList(v === N)(f(A, B)).some(identity)
+  return f(A, B).includes(N)
     ? 'YES'
     : 'NO'
 }
@@ -132,10 +132,6 @@ const fun = (...args) => {
 zip関数を使用
 ```js
 const fun = (...args) => {
-  const zip = (...arrays) => {
-    const len = Math.min(...(Array.from(arrays, v => v.length)))
-    return Array.from(Array(len), (_, i) => arrays.map(arr => arr[i]))
-  }
   const [N, A, B] = toList(split(' '))(args)
   return zip(A, B).filter(([a, b]) => a === b).length
 }
@@ -148,7 +144,6 @@ const fun = (...args) {
   const sum = (...args) => args.reduce((a, b) => a + b)
   const [N, A] = toList(split(' ', toInt))(args)
   return toList(sum)(A.slice(0, A.findIndex(isOdd)))
-
 }
 ```
 

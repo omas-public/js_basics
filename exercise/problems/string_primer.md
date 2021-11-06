@@ -8,7 +8,7 @@ const fun = (...args) => {
 }
 
 // 入力がないので直接書き換え
-const lines = ['']
+const lines = []
 ```
 
 ## [文字列の受け取り](https://paiza.jp/works/mondai/string_primer/basic_step2/edit?language_uid=javascript)
@@ -63,7 +63,7 @@ const fun = (...args) => {
 ```js
 const fun = (...args) => {
   const [N, ...rest] = args
-  return slice(0, toInt(n))(rest).join('')
+  return join('')(slice(0, toInt(n))(rest))
 }
 // return rest.join('') でも良い
 ```
@@ -84,7 +84,7 @@ const fun = (...args) => {
 const fun = (...args) => {
   const [S, T, N] = args
   const [front, back] = [slice(0, toInt(N))(S), slice(toInt(N))(S)]
-  return [front, T, back].join('')
+  return join('')([front, T, back])
 }
 ```
 
@@ -166,7 +166,7 @@ const fun = (...args) => {
 ```js
 const fun = (...args) => {
   const [S] = args
-  return Array.from(S).reverse().join('')
+  return join('')(Array.from(S).reverse())
 }
 ```
 
@@ -174,7 +174,7 @@ const fun = (...args) => {
 
 ```js
 const fun = (...args) => {
-  const f = s => Array.from(s).reverse().join('')
+  const f = s => join('')(Array.from(s).reverse())
   const [S] = args
   return S === f(S)
     ? 'YES'
@@ -285,7 +285,7 @@ const fun = (...args) => {
   const [initial, pairs] = [toInt(S[0]), slice(1)(S).match(/../g)]
   return pairs.reduce(f, initial)
 }
-別解
+//  別解
 //  return eval(S)
 ```
 

@@ -1,16 +1,13 @@
 # Dランク早解きセット
 
-## [snippet](../docs/snippet.md)
 
-## [Problem](https://paiza.jp/works/mondai/drankfast/problem_index?language_uid=javascript)
+## [Problems](https://paiza.jp/works/mondai/drankfast/problem_index?language_uid=javascript)
 
 ### [1日1万歩](https://paiza.jp/works/mondai/drankfast/d1_step_distance/edit?language_uid=javascript)
 
 ```js
 const fun = (...args) => {
   const [d, s] = split(' ', toInt)(args[0])
-  // write code here
-
   return [d, s]
 }
 
@@ -22,8 +19,6 @@ print(identity)(result)
 ```js
 const fun = (...args) => {
   const n = toInt(args[0])
-  // write code here
-
   return n
 }
 

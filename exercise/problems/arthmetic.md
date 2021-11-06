@@ -94,7 +94,7 @@ const fun = (...args) => {
 
 print(identity)(fun(...lines))
 // 入力がないので直接書き換える
-const lines = ['']
+const lines = []
 
 // return ((N + 3286) * 4736) % 12312
 ```
@@ -124,7 +124,7 @@ const fun = (...args) => {
 }
 
 // 入力がないので直接書き換える
-const lines = ['']
+const lines = []
 ```
 
 ### [代入演算 4](https://paiza.jp/works/mondai/arithmetic_substitution_op/arithmetic_substitution_op__substitution_step4/edit?language_uid=javascript)

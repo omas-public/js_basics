@@ -144,15 +144,15 @@ const fun = (...args) => {
 product pattern
 ```js
 const fun = (...args) => {
-  const product = (...iters) => iters.reduce((a, b) => a.flatMap(d => b.map(e => [d, e].flat())))
+  const product = (...iters) => 
+    iters.reduce((a, b) => a.flatMap(d => b.map(e => [d, e].flat())))
+
   const [[N, K], A, B] = toList(split(' ', toInt))(args)
+  
   return return Math.max(...toList(([a, b]) => a * b)(product(A, B)).flat())
 ```
 
 ## 二重ループ：活用編 三角形の探索
-
-
-
 
 ### [二重ループ：活用編 三角形の探索](https://paiza.jp/works/mondai/double_roop_problems/double_roop_problems__triangle/edit?language_uid=javascript&t=4b67bee5bbc71630a462e0475d6ebbd0)
 
@@ -175,13 +175,13 @@ const fun = (...args) => {
 爆発でtime out
 ```js
 const fun = (...args) => {
-  const product = (...iters) => iters.reduce((a, b) => a.flatMap(d => b.map(e => [d, e].flat())))
-  const seq = (start, end) => [...Array(end - start).keys()].map(v => v + start)
+  const product = (...iters) => 
+    iters.reduce((a, b) => a.flatMap(d => b.map(e => [d, e].flat())))
   const f1 = n => ([a, b, c]) => a + b + c === n
   const f2 = ([a, b, c]) => a ** 2 - b ** 2 - c ** 2 === 0
 
   const N = toInt(args[0])
-  const list = seq(1, N - 2)
+  const list = range(1, N)
   return product(list, list, list).filter(f1(N)).some(f2)
     ? 'YES'
     : 'NO'
