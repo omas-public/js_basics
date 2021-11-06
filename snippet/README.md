@@ -1,45 +1,23 @@
 # [VS Code Snippet](./snippet)
 
-## [simple snippet](./simple.snippet.json)
 
-### Install 
+## Install 
 
+- [simple snippet](./simple.snippet.json)
 - Open Vscode -> File -> user settings -> user snippet -> new global snippet -> paste above link
 - Create new javascript file then `simple<Tab>`
 
-code
-```js
-const readLines = (file = '/dev/stdin') => 
-  require('fs').readFileSync(file).toString().trim().split('\n')
-const identity = value => value
-const join = sep => list => list.join(sep)
-const split = (sep, fun = identity) => iter => Array.from(iter.split(sep), fun)
-const slice = (begin, end) => iter => end === undefined ? iter.slice(begin) : iter.slice(begin, end)
-const toInt = s => parseInt(s, 10)
-const toStr = n => n.toString()
-const toList = fun => iter => Array.from(iter, fun)
-const print = fun => value => console.log(fun(value))
 
-// define your function
-const fun = (...args) => {
-  // write code here
-  return args
-}
-
-// if you use stdin or define your array literal
-const lines =  readLines('./src/data') 
-// use join('\n') or join(' ') or identity in the first parenthesis
-print(identity)(fun(...lines))        
-```
-
-### function summary
+## function summary
 
 |  function                  |  description                                  |
 | -------------------------- | --------------------------------------------- |
-| readLines()                | 外部入力を配列にして返す                      |
+| readLines([file])          | 外部入力を配列にして返す                      |
+| range(n,[m])               | 範囲内の数値の配列を返す                      |
+| zip(array, ...array)       | 複数の配列の要素を組み合わせた値を返す        |
 | identity(value)            | 入力値をそのまま返す                          |
-| join(sep)(list)            | 配列をsepで結合する                           |
 | split(sep, [fun])(iter)    | イテレータをsepで分割[fun]を適応して返す      |
+| join(sep)(list)            | 配列をsepで結合する                           |
 | slice(begin, [end])(iter)  | イテレータをスライスして返す                  |
 | toInt(s)                   | 文字数字を整数に変換                          |
 | toStr(n)                   | 数値を文字数字に変換                          |
@@ -195,18 +173,38 @@ output
 ```js
 1 2 3
 ```
-
-## [paiza snippet](./paiza.snippet.json)
-
-### Install 
-
-- Open Vscode -> File -> user settings -> user snippet -> new global snippet -> paste above link
-- Create new javascript file then `paiza<Tab>`
+### code
 
 ```js
 // Global function
 const readLines = (file = '/dev/stdin') =>
   require('fs').readFileSync(file).toString().trim().split('\n').map(v => v.trim())
+/**
+  * range 範囲内の数値の配列を返す
+  * @param {number} begin
+  * @param {number} end
+  * @returns Array<any>
+  * @example range(10) -> [0,1,2,3,4,5,6,7,8,9]
+  * @example range(1, 10) -> [1,2,3,4,5,6,7,8,9]
+  */
+const range = (begin, end) => {
+  const addN = n => m => n + m
+  const seq = (num, start) => Array.from(Array(num), addN(start))
+  const [num, start] = (end === undefined)
+    ? [0, begin]
+    : [end - begin, begin]
+  return seq(num, start)
+}
+/**
+ * 複数のイテレーターの要素を組み合わせた値を返す
+ * @param  {...any} args
+ * @returns Array<Array>
+ * @example zip([1,2,3], [4,5,6]) -> [[1, 4], [2, 5], [3, 6]]
+ */
+const zip = (...args) => {
+  const size = Math.min(...Array.from(args, arg => arg.length))
+  return Array.from(Array(size), (v, i) => args.map(arg => arg[i]))
+}
 
 /**
  * identity 入力値をそのまま返す
@@ -253,22 +251,6 @@ const slice = (begin, end) => iter => end === undefined
   ? Array.from(iter).slice(begin)
   : Array.from(iter).slice(begin, end)
 
-/**
-  * range 範囲内の数値の配列を返す
-  * @param {number} begin
-  * @param {number} end
-  * @returns Array<any>
-  * @example range(10) -> [0,1,2,3,4,5,6,7,8,9]
-  * @example range(1, 10) -> [1,2,3,4,5,6,7,8,9]
-  */
-const range = (begin, end) => {
-  const addN = n => m => n + m
-  const seq = (num, start) => Array.from(Array(num), addN(start))
-  const [num, start] = (end === undefined)
-    ? [0, begin]
-    : [end - begin, begin]
-  return seq(num, start)
-}
 
 /**
   * toStr 文字列に変換して返す
