@@ -60,12 +60,13 @@
 
 #### 演習
 
+- [Dランク早解きセット](./exercise/problems/drankfast.problems.md)
 - [算術・代入演算メニュー](https://paiza.jp/works/mondai/arithmetic_substitution_op/problem_index?language_uid=javascript)
 
 #### 解答例
 
+- [Dランク早解きセット](./exercise/problems/drankfast.md)
 - [算術・代入演算メニュー](./exercise/problems/arthmetic.md)
-
 
 ### 4th day
 
