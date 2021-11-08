@@ -3,7 +3,7 @@
 
 Given a non-empty string and an int N, return the string made starting with char 0, and then every Nth char of the string. So if N is 3, use char 0, 3, 6, ... and so on. N is 1 or more.
 
-空ではない文字列と整数Nが与えられる。文字列のインデックス0から初めて毎Nごとの文字を合成して返せ。例えばNが3の場合 0, 3, 6, ...番目の文字。Nは1以上とする
+空ではない文字列と整数Nが与えられる。文字列のインデックス0から始めて毎Nごとの文字を合成して返せ。例えばNが3の場合 0, 3, 6, ...番目の文字。Nは1以上とする
 
 everyNth("Miracle", 2) → "Mrce"
 everyNth("abcdefg", 2) → "aceg"

@@ -3,6 +3,8 @@
 
 Given a string, return a new string made of every other char starting with the first, so "Hello" yields "Hlo".
 
+文字列が与えられる，インデックス0から初めて偶数番目の文字で合成した "Hello" -> "Hlo" のような文字列を返せ。
+
 stringBits("Hello") → "Hlo"
 stringBits("Hi") → "H"
 stringBits("Heeololeo") → "Hello"

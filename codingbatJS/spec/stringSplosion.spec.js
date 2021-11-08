@@ -3,6 +3,8 @@
 
 Given a non-empty string like "Code" return a string like "CCoCodCode".
 
+"Code" のような空ではない文字が与えられる，"CCoCodCode" のようにして返せ
+
 stringSplosion("Code") → "CCoCodCode"
 stringSplosion("abc") → "aababc"
 stringSplosion("ab") → "aab"

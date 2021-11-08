@@ -3,6 +3,8 @@
 
 Count the number of "xx" in the given string. We'll say that overlapping is allowed, so "xxx" contains 2 "xx".
 
+与えられた文字列から "xx" をカウントして返せ，オーバーラッピングは許されるので 例えば "xxx" は2つとカウントする
+
 countXX("abcxx") → 1
 countXX("xxx") → 2
 countXX("xxxx") → 3

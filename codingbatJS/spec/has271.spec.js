@@ -3,6 +3,9 @@
 
 Given an array of ints, return true if it contains a 2, 7, 1 pattern: a value, followed by the value plus 5, followed by the value minus 1. Additionally the 271 counts even if the "1" differs by 2 or less from the correct value.
 
+整数の配列が与えられる。2, 7, 1 のパターンが含まれる場合 true を返せ。
+2番めの値が1番目より5つ大きくかつ3番目の値が1番目の値から1小さい値との差が2以内は可とする
+
 has271([1, 2, 7, 1]) → true
 has271([1, 2, 8, 1]) → false
 has271([2, 7, 1]) → true

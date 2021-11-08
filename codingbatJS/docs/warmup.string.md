@@ -43,4 +43,4 @@
 - [stringYak](../spec/stringYak.spec.js)
 - [delDel](../spec/delDel.spec.js)
 - [stringX](../spec/stringX.spec.js)
-- [everyNth](../spec/everyNth)
+- [everyNth](../spec/everyNth.spec.js)
