@@ -6,7 +6,7 @@
 - [Logical exercise](./docs/warmup.logic.md)
 - [Array exercise](./docs/warmup.array.md)
 
-## [WarmUp I](https://codingbat.com/java/Warmup-1)
+### [WarmUp I](https://codingbat.com/java/Warmup-1)
 
 - [sleepIn.spec.js](./spec/sleepIn.spec.js)
 - [monkeyTrouble.spec.js](./spec/monkeyTrouble.spec.js)
@@ -41,7 +41,7 @@
 - [everyNth.spec.js](./spec/everyNth.spec.js)
 
 
-## [WarmUP II](https://codingbat.com/java/Warmup-2)
+### [WarmUP II](https://codingbat.com/java/Warmup-2)
 
 - [stringTimes.spec.js](./spec/stringTimes.spec.js)
 - [frontTimes.spec.js](./spec/frontTimes.spec.js)
@@ -61,7 +61,7 @@
 - [noTriples.spec.js](./spec/noTriples.spec.js)
 - [has271.spec.js](./spec/has271.spec.js)
 
-### [Logic I](https://codingbat.com/java/Logic-1) 
+## [Logic I](https://codingbat.com/java/Logic-1) 
 
 - [alarmClock.spec.js](./spec/alarmClock.spec.js)
 - [answerCell.spec.js](./spec/answerCell.spec.js)
@@ -94,7 +94,7 @@
 - [twoAsOne.spec.js](./spec/twoAsOne.spec.js)
 - [withoutDoubles.spec.js](./spec/withoutDoubles.spec.js)
 
-### [String I](https://codingbat.com/java/String-1)
+## [String I](https://codingbat.com/java/String-1)
 
 - [atFirst.spec.js](./spec/atFirst.spec.js)
 - [comboString.spec.js](./spec/comboString.spec.js)
@@ -130,7 +130,7 @@
 - [withoutX.spec.js](./spec/withoutX.spec.js)
 - [withoutX2.spec.js](./spec/withoutX2.spec.js)
 
-### [Array I](https://codingbat.com/java/Array-1)
+## [Array I](https://codingbat.com/java/Array-1)
 
 - [biggerTwo.spec.js](./spec/biggerTwo.spec.js)
 - [commonEnd.spec.js](./spec/commonEnd.spec.js)
