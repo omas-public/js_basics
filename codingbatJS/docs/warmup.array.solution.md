@@ -107,15 +107,16 @@ const altPairs = (str) => {
 [stringMatch](../spec/stringMatch.spec.js)
 ```js
 const zip = (...args) => {
-  const mapfun = args => index => args.map(array => array[index])
-  const minlen = Math.min(...(args.map(array => array.length)))
-  return Array.from(Array(minlen).keys(), mapfun(args))
+  const size = Math.min(...Array.from(args, arg => arg.length))
+  return Array.from(Array(size), (v, i) => args.map(arg => arg[i]))
 }
 
 const stringMatch = (a, b) => {
-  const f = (v, i, a) => [a[i - 1], v].join('')
+  const mf = (v, i, a) => [a[i - 1], v].join('')
+  const f = a => {
+    return Array.from(a).map(mf).slice(1)
+  }
   const eq = ([a, b]) => a === b
-  return zip(Array.from(a).map(f).slice(1), Array.from(b).map(f).slice(1))
-    .filter(eq).length
+  return zip(f(a), f(b)).filter(eq).length
 }
 ```

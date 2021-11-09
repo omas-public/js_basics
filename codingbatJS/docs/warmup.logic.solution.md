@@ -75,8 +75,7 @@ const nearHundred = (n) => {
 ```js
 const icyHot = (temp1, temp2) => {
   const f = (a, b) => Math.min(a, b) < 0 && Math.max(a, b) > 100
-  const [s, l] = [temp1, temp2]
-  return f(s, l)
+  return f(temp1, temp2)
 }
 ```
 
