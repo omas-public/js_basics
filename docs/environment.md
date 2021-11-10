@@ -35,6 +35,8 @@ sudo npm install -g n
 sudo n lts
 sudo apt purge nodejs npm
 sudo apt autoremove
+sudo npm install -g npm
+sudo npm install -g yarn
 ```
 
 ## standardjs and jest
