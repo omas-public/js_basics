@@ -60,7 +60,6 @@
 
 #### 演習
 
-- [Dランク早解きセット](./exercise/problems/drankfast.problems.md)
 - [算術・代入演算メニュー](https://paiza.jp/works/mondai/arithmetic_substitution_op/problem_index?language_uid=javascript)
 
 #### 解答例
@@ -109,12 +108,12 @@ String(文字列)のプロパティ(フィールド)とメソッド(関数)を�
 - [CodingBat WarmUP(Array)](./codingbatJS/docs/warmup.array.md)
 - [CodingBat WarmUP(logic)](./codingbatJS/docs/warmup.logic.md)
 - [配列メニュー](https://paiza.jp/works/mondai/array_primer/problem_index?language_uid=javascript)
-- [配列活用メニュー](https://paiza.jp/works/mondai/array_utilization_primer/problem_index?language_uid=javascript)
 
 #### 解答例
 
 - [CodingBat WarmUP(Array)](./codingbatJS/docs/warmup.array.solution.md)
 - [CodingBat WarmUP(logic)](./codingbatJS/docs/warmup.logic.solution.md)
+- [配列メニュー](./exercise/problems/array_primer.md)
 
 
 ### 7th - 8th day

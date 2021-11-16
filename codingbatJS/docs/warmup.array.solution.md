@@ -113,10 +113,9 @@ const zip = (...args) => {
 
 const stringMatch = (a, b) => {
   const mf = (v, i, a) => [a[i - 1], v].join('')
-  const f = a => {
-    return Array.from(a).map(mf).slice(1)
-  }
+  const f = a => Array.from(a).map(mf).slice(1)
   const eq = ([a, b]) => a === b
+  
   return zip(f(a), f(b)).filter(eq).length
 }
 ```
