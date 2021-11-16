@@ -9,7 +9,7 @@
 			"  const addN = n => m => n + m",
 			"  const seq = (num, start) => Array.from(Array(num).keys(), addN(start))",
 			"  const [num, start] = (end === undefined)",
-			"    ? [0, begin]",
+			"    ? [begin, 0]",
 			"    : [end - begin, begin]",
 			"  return seq(num, start)",
 			"}",
